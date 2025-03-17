@@ -170,7 +170,7 @@ const App: React.FC = () => {
                     Analyzing...
                   </>
                 ) : (
-                  'UPLOAD IMAGE'
+                  'SCAN'
                 )}
               </button>
             </form>

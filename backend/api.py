@@ -59,12 +59,11 @@ print("Model saved as 'blood_cancer_model.pkl'")
 
 app = FastAPI(title="Blood Cancer Detection API")
 
-# Add CORS middleware with proper configuration
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:5173",  # React dev server (Vite default)
-        "http://localhost:3000",  # Optional: if you use a different frontend port
+        "http://localhost:5173", 
+        "http://localhost:3000", 
     ],
     allow_credentials=True,
     allow_methods=["*"],
